@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-// import useOnClickOutside from "../../hooks/useOnClickOutside";
+import useOnClickOutside from "../../hooks/useOnClickOutside";
 import "./MovieModal.css";
 
 function MovieModal({
@@ -13,9 +13,7 @@ function MovieModal({
   setModalOpen,
 }) {
   const ref = useRef();
-  // useOnClickOutside(ref, () => {
-  //   setModalOpen(false);
-  // });
+  useOnClickOutside(ref, () => setModalOpen(false));
 
   return (
     <div className="presentation">
