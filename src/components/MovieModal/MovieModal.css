@@ -32,6 +32,7 @@
 }
 .modal__user-perc {
   color: #46d369;
+  margin-right: 1rem;
 }
 .modal::-webkit-scrollbar {
   display: none;
