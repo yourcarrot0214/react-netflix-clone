@@ -7,6 +7,8 @@ import { useDebounce } from "../../hooks/useDebounce";
 export default function SearchPage() {
   const navigate = useNavigate();
   const [searchResults, setSearchResults] = useState([]);
+  console.log("🥕 useLocation : ", useLocation());
+  console.log("🥕 useNavigate : ", navigate);
 
   const useQuery = () => {
     return new URLSearchParams(useLocation().search);

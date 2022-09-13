@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import axios from "../../api/axios";
 
 export default function DetailPage() {
+  console.log("🥕 useParams : ", useParams());
+  console.log("🥕 useLocation : ", useLocation());
   const { movieId } = useParams();
   const [movie, setMovie] = useState({});
 

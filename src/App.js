@@ -16,7 +16,8 @@ const Layout = () => {
   );
 };
 
-function App() {
+function App({ history }) {
+  console.log("🥕 history : ", history);
   return (
     <div className="App">
       <Routes>
